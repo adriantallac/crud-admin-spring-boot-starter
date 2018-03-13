@@ -28,7 +28,7 @@ import org.springframework.context.annotation.Configuration;
 @ConditionalOnProperty(name = "crudadmin.enabled", matchIfMissing = true)
 @ComponentScan
 @EnableConfigurationProperties(CrudAdminProperties.class)
-@Configuration
+// @Configuration
 public class CrudAdminAutoConfiguration {
 	
 }
