@@ -57,6 +57,7 @@ import com.github.qlefevre.crudadmin.model.CrudAdminRepository;
 import com.github.qlefevre.crudadmin.util.CrudAdminUtils;
 
 @Controller
+@ComponentScan(basePackages = {"org.springframework.data.repository", "com.github.qlefevre.crudadmin"})
 public class CrudAdminController {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(CrudAdminController.class);
