@@ -19,6 +19,7 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 /**
  * The auto-configuration for Crud Administration.
@@ -29,6 +30,7 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan
 @EnableConfigurationProperties(CrudAdminProperties.class)
 @Configuration
+@EnableJpaRepositories
 public class CrudAdminAutoConfiguration {
 	
 }
