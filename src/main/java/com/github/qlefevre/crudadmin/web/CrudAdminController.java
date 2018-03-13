@@ -55,6 +55,7 @@ import com.github.qlefevre.crudadmin.model.CrudAdminObject;
 import com.github.qlefevre.crudadmin.model.CrudAdminObjectField;
 import com.github.qlefevre.crudadmin.model.CrudAdminRepository;
 import com.github.qlefevre.crudadmin.util.CrudAdminUtils;
+import org.springframework.context.annotation.ComponentScan;
 
 @Controller
 @ComponentScan(basePackages = {"org.springframework.data.repository", "com.github.qlefevre.crudadmin"})
