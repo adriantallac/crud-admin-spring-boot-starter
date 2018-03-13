@@ -27,10 +27,10 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
  * @author Quentin Lefèvre
  */
 @ConditionalOnProperty(name = "crudadmin.enabled", matchIfMissing = true)
-@ComponentScan(basePackages={"com.github.qlefevre.crudadmin", "org.springframework.data.repository"})
+@ComponentScan//(basePackages={"com.github.qlefevre.crudadmin", "org.springframework.data.repository"})
 @EnableConfigurationProperties(CrudAdminProperties.class)
-@Configuration
-@EnableJpaRepositories
+// @Configuration
+// @EnableJpaRepositories
 public class CrudAdminAutoConfiguration {
 	
 }
