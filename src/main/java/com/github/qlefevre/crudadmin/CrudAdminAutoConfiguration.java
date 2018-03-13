@@ -19,7 +19,6 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 /**
  * The auto-configuration for Crud Administration.
@@ -27,10 +26,9 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
  * @author Quentin Lefèvre
  */
 @ConditionalOnProperty(name = "crudadmin.enabled", matchIfMissing = true)
-@ComponentScan//(basePackages={"com.github.qlefevre.crudadmin", "org.springframework.data.repository"})
+@ComponentScan
 @EnableConfigurationProperties(CrudAdminProperties.class)
-// @Configuration
-// @EnableJpaRepositories
+@Configuration
 public class CrudAdminAutoConfiguration {
 	
 }
